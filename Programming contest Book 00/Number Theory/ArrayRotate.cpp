@@ -22,7 +22,7 @@ void ArrayRotate(vector<int> &arr, int K){
     }
 
     Reverse(arr, 0 , K-1);
-    Reverse(arr,K,arr.size()-1);
+    Reverse(arr,K+1,arr.size()-1);
     Reverse(arr,0,arr.size()-1);
 }
 int main() {

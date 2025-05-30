@@ -20,7 +20,42 @@ const int N = 1e5+9;
 */
 vector<int> Graph[N];
 bool Visited[N];
+class graph{
+    private:
+        int V;
+        vector<vector<int>> AdjacentList;
+    public:
+    graph(int vertices) {
+        V = vertices;
+        AdjacentList.resize(V);
+    }
+    void addEdge(int u, int v, bool directed) {
+        AdjacentList[u].push_back(v);
+        if (directed) {
+            AdjacentList[v].push_back(u);
+        }
+    }
 
+    void DfsRecoard(vector<bool> &visited,int s,vector<int> &record){
+        visited[s] = true;
+        record.push_back(s);
+        for(int node : AdjacentList[s]) {
+            if(!visited[node]) {
+                DfsRecoard(visited, node, record);
+            }
+        }
+    }
+    vector<int> DFS(){
+        vector<bool> visited(V,false);
+        vector<int> record;
+        for(int i = 0; i < V; i++) {
+            if(!visited[i]) {
+                DfsRecoard(visited, i, record);
+            }
+        }
+        return record;
+    }
+};
 void DFS(int vertex){
     //Part 1 : Take Action on vertex after entering the vertex
     cout<< vertex <<endl;
