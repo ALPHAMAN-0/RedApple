@@ -1,48 +1,54 @@
 # RedApple
 
-A collection of educational resources, projects, and reference materials.
+A collection of educational resources, reference books, course materials, and programming contest preparation materials.
 
-## Repository Structure
+## Contents
 
-### AIUB Course
-Contains course materials and resources from AIUB (American International University-Bangladesh).
-
-### AIUB Projects
-Project work completed as part of AIUB coursework.
-
-### AutoCAD/
-AutoCAD drawings and resources:
-- 12 AutoCAD drawing files (`1-12.dwg`)
-- AUTOCAD OEL reference guide (PDF)
-
-### Book
-Technical literature and reference materials, including:
-- Programming books (e.g., *Black Hat Python*)
+### Book/
+Technical books and reference materials:
+- ACM programming contest reference (PDF)
 - Computer Networking notes
-- Database Management Systems notes
-- Electronics reference materials
-- Other technical PDFs
+- DBMS (Database Management Systems) notes
+- Electronics reference (Electronic Devices and Circuit Theory)
+- Operating System notes
+- SQL notes
+- Interview preparation materials
+- Software Architecture course notes (Day 1-6)
 
-### JAVA
-Java programming resources organized into:
-- AIUB Java course materials
-- Basic Java programming concepts
-- Java Swing UI development
-- JFrame examples
+### HTML CSS and JS/
+Resources and materials for learning HTML, CSS, and JavaScript fundamentals.
 
-### Programming Contest Book 00
-Resources and materials for programming contests.
+### Online Certificates/
+Collection of online course completion certificates from platforms like:
+- Cisco
+- CodeChef
+- HackerRank
 
-## Purpose
-This repository serves as a comprehensive collection of learning materials, project resources, and technical references across multiple disciplines in computer science and engineering.
+### Pandas/
+Python Pandas library learning materials and exercises.
+
+### Programming Contest Book 00/
+Competitive programming resources organized by topic:
+- Data Structures
+- Dynamic Programming
+- Graph Algorithms
+- Greedy Techniques
+- Number Theory
+- Bit Manipulation
+- Searching and Sorting
+- STL (Standard Template Library)
+- Tree problems
+- Advanced techniques
+
+### SIGMA WEB DEV/
+Sigma Web Development course materials (Day 1, Day 2).
 
 ## How to Use
-1. Browse the relevant directory based on your interest or field of study.
-2. Download and review the materials as needed.
-3. Use the reference books and notes for study and research purposes.
 
-## Contributions
-If you want to contribute to this repository, feel free to submit a pull request with additional resources or improvements.
+1. Browse the relevant directory based on your area of interest
+2. Download and review the materials as needed
+3. Use the reference books and notes for study and research
 
 ## License
+
 This repository is intended for educational use. Please ensure compliance with any applicable copyright laws when using the provided materials.
