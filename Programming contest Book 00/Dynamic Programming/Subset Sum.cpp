@@ -2,6 +2,7 @@
 #include<vector>
 
 using namespace std;
+void PrintSubSetSum(vector<int> dp,int M);
 void SubsetSum(vector<int> arr,int M){
     // DP initialization
     vector<int> dp(M+10,0);
