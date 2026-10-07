@@ -49,6 +49,10 @@ Sigma Web Development course materials (Day 1, Day 2).
 2. Download and review the materials as needed
 3. Use the reference books and notes for study and research
 
+## Tests
+
+Tests for a selection of the contest-book programs: `g++ -std=c++17 tests/contest_book_tests.cpp -o tests/contest_book_tests.out && ./tests/contest_book_tests.out`
+
 ## License
 
 This repository is intended for educational use. Please ensure compliance with any applicable copyright laws when using the provided materials.

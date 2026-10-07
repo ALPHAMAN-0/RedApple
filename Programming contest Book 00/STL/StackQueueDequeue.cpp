@@ -29,10 +29,11 @@ int main() {
     deque<int> dq;
     dq.push_back(1);        // Add element to back
     dq.push_front(2);       // Add element to front
-    dq.pop_back();          // Remove element from back
-    dq.pop_front();         // Remove element from front
+    // front() and back() must be read while the deque still has elements
     int d_front = dq.front(); // Get front element
     int d_back = dq.back(); // Get back element
+    dq.pop_back();          // Remove element from back
+    dq.pop_front();         // Remove element from front
     bool dq_empty = dq.empty(); // Check if deque is empty
     int dq_size = dq.size(); // Get deque size
 

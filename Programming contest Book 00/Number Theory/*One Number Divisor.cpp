@@ -21,6 +21,11 @@ int main(){
     int N;
     cout << "Enter a Number" << endl;
     cin >> N;
+    // divisors[] has room for the numbers up to 100001
+    if(N > 100001){
+        cout << "Number must not be larger than 100001" << endl;
+        return 1;
+    }
     Divisors(N);
     for(int i=1; i<=N; i++){
         cout << "Divisors of " << i << ": ";

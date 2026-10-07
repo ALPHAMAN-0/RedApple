@@ -35,6 +35,11 @@ int main() {
     //int this test case we have fixed row and colum means colum did not dynamically
     int n;
     cin>>n;
+    // V is an array on the stack: it needs at least one row and must not be huge
+    if(n<1 || n>100000){
+        cout<<"Number of rows must be between 1 and 100000"<<endl;
+        return 1;
+    }
     vector<int> V[n];
     loop(i,0,n) {
         int m;
@@ -48,7 +53,9 @@ int main() {
     loop(i,0,n){
         printer(V[i]);
     }
-    cout<< V[0][0]<<endl;
+    if(!V[0].empty()){
+        cout<< V[0][0]<<endl;
+    }
 
     //int this case we have row and colum dynamically
     int N;
