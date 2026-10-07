@@ -1,2 +1,8 @@
 .DS_Store
 Thumbs.db
+
+# C/C++ build output
+*.o
+*.out
+*.exe
+*.dSYM/
