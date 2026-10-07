@@ -8,7 +8,11 @@ bool isfound(vector<int> &numbers,int target){
     low = 0;
     high = numbers.size()-1;
 
-    while( low <= high && (numbers[high] >= target) ){
+    while( low <= high && (numbers[low] <= target) && (numbers[high] >= target) ){
+        // every value left is the same: nothing to interpolate, and no division by zero
+        if(numbers[high] == numbers[low]){
+            return numbers[low] == target;
+        }
         idx = int((high-low) * ((target - numbers[low]) / (numbers[high] - numbers[low])) + low);
         if(numbers[idx]==target){
             return true;

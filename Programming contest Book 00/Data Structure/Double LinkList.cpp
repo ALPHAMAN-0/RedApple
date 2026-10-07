@@ -60,7 +60,12 @@ void Deletion(int value){
     else if(Root->data == value){
         Helper1 = Root;
         Root = Root->next;
-        Root->prev = NULL;
+        if(Root != NULL){
+            Root->prev = NULL;
+        }
+        else {
+            Tail = NULL; // that was the only node, the list is empty now
+        }
         delete Helper1;
         cout<<"Deleted Successfully"<<endl;
     }
