@@ -5,12 +5,13 @@ A collection of educational resources, reference books, course materials, and pr
 ## Architecture / How it Works
 
 ```mermaid
-flowchart LR
-    A[User] --> B[Redapple]
-    B --> C{Logic}
-    C --> D[(Data)]
-    C --> E[Output]
-    D --> C
+flowchart TD
+    RedApple --> Book
+    RedApple --> HTML_CSS_and_JS
+    RedApple --> Online_Certificates
+    RedApple --> Pandas
+    RedApple --> Programming_Contest_Book
+    RedApple --> SIGMA_WEB_DEV
 ```
 
 
