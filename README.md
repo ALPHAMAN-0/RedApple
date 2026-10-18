@@ -2,6 +2,18 @@
 
 A collection of educational resources, reference books, course materials, and programming contest preparation materials.
 
+## Architecture / How it Works
+
+```mermaid
+flowchart LR
+    A[User] --> B[Redapple]
+    B --> C{Logic}
+    C --> D[(Data)]
+    C --> E[Output]
+    D --> C
+```
+
+
 ## Contents
 
 ### Book/
