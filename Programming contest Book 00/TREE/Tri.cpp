@@ -20,6 +20,14 @@ TrieNode* createNode() {
 void insert(TrieNode* root, string word) {
     TrieNode* current = root;
 
+    // BOX[] only has slots for the letters a to z
+    for (int i=0;i<word.size();i++) {
+        if (word[i] < 'a' || word[i] > 'z') {
+            cout<<"Skipped "<<word<<": only the letters a-z are supported"<<endl;
+            return;
+        }
+    }
+
     for (int i=0;i<word.size();i++) {
         int index = word[i] - 'a';    // Convert letter to a number (0 to 25)
         if (current->BOX[index] == NULL) {
@@ -34,6 +42,9 @@ bool isfound(string words,TrieNode *root){
     TrieNode *current = root;
     for(int i=0;i<words.size();i++){
         int index = words[i] - 'a';
+        if(index < 0 || index >= 26){
+            return false;   // not a letter a-z, so it cannot be in the trie
+        }
         if(current->BOX[index] == NULL){
             return false;
         }
@@ -60,6 +71,9 @@ bool found(TrieNode *root){
             index = i;
         }
       }
+     if(index == -1){
+         return false;   // this node has no children: there is nothing to follow
+     }
      cout<<char(index+97);
      current = current->BOX[index];
     }
@@ -76,7 +90,7 @@ int main() {
     cin>>x;
     
     cout<<"Enter the words"<<endl;
-    while(x--){
+    while(x-- > 0){
         cin>>words;
         insert(root, words);
     }

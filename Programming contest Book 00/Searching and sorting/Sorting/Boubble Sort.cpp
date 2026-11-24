@@ -19,7 +19,7 @@ int main(){
     
     //sorted worker
     for(int i=0;i<N;i++){
-        for(int j=0;j<N;j++){
+        for(int j=0;j<N-1;j++){
             if(numbers[j+1]>numbers[j]){
                 swap(numbers[j+1],numbers[j]);
             }

@@ -16,6 +16,10 @@ void Reverse(vector<int> &arr, int Start, int End){
 }
 void ArrayRotate(vector<int> &arr, int K){
     
+    // nothing to rotate, and K % 0 is undefined
+    if(arr.empty()){
+        return;
+    }
     K = K%arr.size();
     if(K<0){
         K = K+arr.size();

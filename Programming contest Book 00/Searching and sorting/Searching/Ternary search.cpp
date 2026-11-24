@@ -8,7 +8,7 @@ bool isfound(vector<int> &numbers,int target){
     int  l, r;
     
     l = 0;
-    r = numbers.size();
+    r = numbers.size()-1;
     
     while(l<=r){
           mid1 = l + (r-l)/3;
@@ -23,8 +23,8 @@ bool isfound(vector<int> &numbers,int target){
                 l = mid2+1;
           }
           else {
-                l = mid1++;
-                r = mid2--;
+                l = mid1+1;
+                r = mid2-1;
           }
     }
     return false;

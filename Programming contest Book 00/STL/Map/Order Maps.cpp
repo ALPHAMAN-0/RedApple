@@ -5,7 +5,7 @@
 using namespace std;
 class OrderedMap {
 private:
-    map<int, string> map;
+    std::map<int, string> map;
 
 public:
     void add(int key, const string& value) {

@@ -129,6 +129,9 @@ bool Search(struct BinarySearchTree *Root,int Key){
     
 }
 void PrintInRange(struct BinarySearchTree *Root,int X,int Y){
+    if(Root == NULL){
+        return;
+    }
     if(X <= Root->data && Root->data <= Y){
             if(Root->Left!=NULL)PrintInRange(Root->Left,X,Y);
             cout<<Root->data<<" ";

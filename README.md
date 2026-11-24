@@ -2,6 +2,19 @@
 
 A collection of educational resources, reference books, course materials, and programming contest preparation materials.
 
+## Architecture / How it Works
+
+```mermaid
+flowchart TD
+    RedApple --> Book
+    RedApple --> HTML_CSS_and_JS
+    RedApple --> Online_Certificates
+    RedApple --> Pandas
+    RedApple --> Programming_Contest_Book
+    RedApple --> SIGMA_WEB_DEV
+```
+
+
 ## Contents
 
 ### Book/
@@ -48,6 +61,10 @@ Sigma Web Development course materials (Day 1, Day 2).
 1. Browse the relevant directory based on your area of interest
 2. Download and review the materials as needed
 3. Use the reference books and notes for study and research
+
+## Tests
+
+Tests for a selection of the contest-book programs: `g++ -std=c++17 tests/contest_book_tests.cpp -o tests/contest_book_tests.out && ./tests/contest_book_tests.out`
 
 ## License
 

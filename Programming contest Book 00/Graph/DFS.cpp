@@ -80,10 +80,19 @@ int main() {
     int vertex,edge;
     cout<<"Enter the Vertex and edge"<<endl;
     cin>>vertex>>edge;
+    // Graph[] and Visited[] have N slots, so every vertex number must be 0..N-1
+    if(!cin || vertex<0 || vertex>=N){
+        cout<<"Vertex numbers must be between 0 and "<<N-1<<endl;
+        return 1;
+    }
 
     int V1,V2;
     for(int i=0; i<edge; i++){
         cin>>V1>>V2;
+        if(!cin || V1<0 || V1>=N || V2<0 || V2>=N){
+            cout<<"Vertex numbers must be between 0 and "<<N-1<<endl;
+            return 1;
+        }
 
         Graph[V1].push_back(V2);
         Graph[V2].push_back(V1);

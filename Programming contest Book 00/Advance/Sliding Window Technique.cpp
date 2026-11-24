@@ -7,6 +7,11 @@
 using namespace std;
 
 void Window(vector<int> &numbers,int WindowSize){
+      // the window has to fit into the array, otherwise numbers[i] below is out of range
+      if(WindowSize<1 || WindowSize>(int)numbers.size()){
+         cout<<"Window size must be between 1 and the array size"<<endl;
+         return;
+      }
       int WindowSum = 0;
       int MinSum  = PLUS_INF;
       int MaxSum = Minus_INF;

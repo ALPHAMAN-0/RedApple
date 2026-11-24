@@ -21,6 +21,11 @@ int main(){
     int N;
   cout<<"Enter the Range of numbers"<<endl;
     cin>>N;
+    // PrimeNumbers[] has 1000 slots and the sieve marks up to index N
+    if(N > 999){
+        cout<<"Range must not be larger than 999"<<endl;
+        return 1;
+    }
     PrimeFilter(N);
     for(int i=2;i<N;i++){
         if(PrimeNumbers[i]==false){

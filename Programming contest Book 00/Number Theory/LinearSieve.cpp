@@ -5,6 +5,10 @@
 using namespace std;
 
 vector<int> Linear_Sieve(int n){
+   // there are no primes below 2, and Sieve[1] would not exist
+   if(n < 2){
+      return vector<int>();
+   }
    vector<bool> Sieve(n+1, true);
    vector<int> primes;
    Sieve[0] = Sieve[1] = false;
